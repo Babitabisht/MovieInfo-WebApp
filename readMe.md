@@ -1,1 +1,1 @@
-Web App to find the movies and find out some important details about them ,using jquery and ajax and json.
+Web App to find the movies and find out some important details about them ,using jquery, ajax and json.
