@@ -6,10 +6,10 @@
 // } );
 
 // function getMovies(searchText){
-//     alert(axios.get('http://api.themoviedb.org/3/search/movie?query=hardware&api_key=#')
+//     alert(axios.get('http://api.themoviedb.org/3/search/movie?query=hardware&api_key=5f')
 //     )
 //        // alert(searchText);
-//     axios.get('http://api.themoviedb.org/3/search/movie?query=hardware&api_key=#')
+//     axios.get('http://api.themoviedb.org/3/search/movie?query=hardware&api_key=52')
 //          .then((response)=>{
 //              console.log(response);
 //              alert(response);
@@ -43,7 +43,7 @@
 //     mode = 'search/movie',
 //     input,
 //     movieName,
-//     key = '?api_key=';
+//     key = '?api_key=5f76b2';
 
 //     $('#searchForm').on('submit',function(event){
 //         var input = $('#searchText').val();
@@ -70,7 +70,7 @@ $(document).ready(function() {
         mode = 'search/movie?query=',
         input,
         movieName,
-        key = '&api_key=#';
+        key = '&api_key=******';
 var a;
     $('#searchForm').on('submit',function() {
         var input = $('#searchText').val(),
@@ -179,7 +179,7 @@ function movieSelected(id){
     //a.replace(/^"(.*)"$/, '$1')
    // alert(a.replace(/^"(.*)"$/, '$1'))
     sessionStorage.setItem('movieId',a.replace(/^"(.*)"$/, '$1'));
-    //alert(sessionStorage.getItem('movieId'))
+    alert(sessionStorage.getItem('movieId'))
     console.log(id)
     window.location='movie.html';
     return false;
@@ -196,10 +196,11 @@ function movieSelected(id){
         mode = 'movie/',
         input=movieId,
         movieName,
-        key = '?api_key=#';
+        key = '?api_key=5f76b11f0da8514f65b0d2f765c44a92';
         var t=url+mode+input+key
         //alert(t)
 
+        //https://api.themoviedb.org/3/movie/325459?api_key=5f76b11f0da8514f65b0d2f765c44a92
         $.ajax({
             type: 'GET',
             url: url+mode+input+key,
